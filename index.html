@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="dist/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__title">Статус складских ячеек "Чуланчик"</div>
+        </header>
+        <section class="main">
+            <div class="floor__title">1 этаж</div>
+            <ul class="floor">
+                <li class="floor__cell-item">1</li>
+                <li class="floor__cell-item">2</li>
+                <li class="floor__cell-item">3</li>
+                <li class="floor__cell-item">4</li>
+                <li class="floor__cell-item">5</li>
+                <li class="floor__cell-item">6</li>
+                <li class="floor__cell-item">7</li>
+                <li class="floor__cell-item">8</li>
+                <li class="floor__cell-item">9</li>
+                <li class="floor__cell-item">10</li>
+                <li class="floor__cell-item">11</li>
+                <li class="floor__cell-item">12</li>
+                <li class="floor__cell-item">13</li>
+                <li class="floor__cell-item">14</li>
+                <li class="floor__cell-item">15</li>
+                <li class="floor__cell-item">16</li>
+                <li class="floor__cell-item">17</li>
+                <li class="floor__cell-item">18</li>
+                <li class="floor__cell-item">19</li>
+                <li class="floor__cell-item">20</li>
+                <li class="floor__cell-item">21</li>
+                <li class="floor__cell-item">22</li>
+                <li class="floor__cell-item">23</li>
+                <li class="floor__cell-item">24</li>
+                <li class="floor__cell-item">25</li>
+                <li class="floor__cell-item">26</li>
+                <li class="floor__cell-item">27</li>
+                <li class="floor__cell-item">28</li>
+                <li class="floor__cell-item">29</li>
+                <li class="floor__cell-item">30</li>
+            </ul>
+            <div class="floor__title">2 этаж</div>
+            <ul class="floor">
+                <li class="floor__cell-item">31</li>
+                <li class="floor__cell-item">32</li>
+                <li class="floor__cell-item">33</li>
+                <li class="floor__cell-item">34</li>
+                <li class="floor__cell-item">35</li>
+                <li class="floor__cell-item">36</li>
+                <li class="floor__cell-item">37</li>
+                <li class="floor__cell-item">38</li>
+                <li class="floor__cell-item">39</li>
+                <li class="floor__cell-item">40</li>
+                <li class="floor__cell-item">41</li>
+                <li class="floor__cell-item">42</li>
+                <li class="floor__cell-item">43</li>
+                <li class="floor__cell-item">44</li>
+                <li class="floor__cell-item">45</li>
+                <li class="floor__cell-item">46</li>
+                <li class="floor__cell-item">47</li>
+                <li class="floor__cell-item">48</li>
+                <li class="floor__cell-item">49</li>
+                <li class="floor__cell-item">50</li>
+                <li class="floor__cell-item">51</li>
+                <li class="floor__cell-item">52</li>
+                <li class="floor__cell-item">53</li>
+                <li class="floor__cell-item">54</li>
+                <li class="floor__cell-item">55</li>
+                <li class="floor__cell-item">56</li>
+            </ul>
+        </section>
+
+        
+    </div>
+
+    <template id="dropdownTmpl"> 
+        <div class="dropdown">
+            <ul class="dropdown__list">
+                <li class="dropdown__item">
+                    <div class="dropdown__title">Номер ячейки</div>
+                    <div id="Cell-number-value" class="dropdown__value"></div>
+                </li>
+                <li class="dropdown__item">
+                    <div class="dropdown__title">Статус</div>
+                    <div id="Cell-status-value" class="dropdown__value"></div>
+                </li>
+                <li class="dropdown__item">
+                    <div class="dropdown__title">Срок завершения аренды</div>
+                    <div id="Cell-expire-value" class="dropdown__value"></div>
+                </li>
+            </ul>
+        </div>
+    </template>
+
+    <template id="modalTmpl">
+        <div class="modal-wrapper">
+            <div class="modal">
+                <ul class="modal-inputs">
+                    <h3 class="modal-inputs__title">Редактировать статус ячейки</h3>
+                    <li class="modal-number">
+                        <div class="modal-number__title">Номер редактируемой ячейки</div>
+                        <div class="modal-number__num"></div>
+                    </li>
+                    <li class="modal-status">
+                        <div class="modal-status__title">Ячейка занята?</div>
+                        <input id="modal-status" class="modal__input" type="checkbox">
+                    </li>
+                    <li class="modal-expire">
+                        <div class="modal-expire__title">Дата окончания аренды</div>
+                        <input id="modal-expire" class="modal__input" type="date">
+                    </li>
+                </ul>
+                <div class="modal-buttons">
+                    <button id="submit-btn" class="modal-buttons__btn">Сохранить</button>
+                    <button id="clear-btn" class="modal-buttons__btn">Сбросить</button>
+                    <button id="cancel-btn" class="modal-buttons__btn">Отменить</button>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <script src= "./dist/index.js" type="text/javascript"></script>
+</body>
+</html>

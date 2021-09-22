@@ -1,0 +1,22 @@
+{
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.39.2"
+  },
+  "name": "cells-app",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nictober",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
