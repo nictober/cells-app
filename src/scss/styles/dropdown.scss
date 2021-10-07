@@ -1,0 +1,16 @@
+.dropdown {
+    background: cornsilk;
+    padding: 15px;
+
+    &__list {
+        display: grid;
+        row-gap: 10px;
+    }
+
+    &__item {
+        display: grid;
+        column-gap: 5px;
+        grid-template-columns: 1fr 0.3fr;
+    }
+
+}

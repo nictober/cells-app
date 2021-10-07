@@ -1,0 +1,59 @@
+$baseFontSize: 16px;
+$middleFontSize: 22px;
+$highestFontSize: 26px;
+
+$mobile: 968px;
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+a, ul, li, p, h1, h2, h3, h4, h5, address {
+    text-decoration: none;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,600;1,400&display=swap');
+}
+
+body {
+    height: 100vh;
+    font-family: 'Rubik', sans-serif;
+    font-size: $baseFontSize;
+    background: lightslategray;
+}
+
+
+
+.wrapper {
+    max-width: 65%;
+    margin: 0 auto;
+
+    display: grid;
+    min-height: 100%;
+    grid-template-rows: 70px 1fr 70px;
+    grid-row-gap: 10px;
+
+    @media (max-width: $mobile) {
+        margin: 0;
+        min-width: 100%;
+    }
+}

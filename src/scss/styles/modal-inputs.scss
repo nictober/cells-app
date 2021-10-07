@@ -1,0 +1,11 @@
+.modal-inputs {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 400px;
+    width: 350px;
+
+    &__title {
+        font-weight: 600;
+        font-size: $middleFontSize;
+    }
+}

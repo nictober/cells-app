@@ -1,0 +1,28 @@
+.floor {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 25px;
+    border: dotted black;
+    padding: 10px;
+
+    @media (max-width: $mobile) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    &__title {
+        font-size: $middleFontSize;
+        font-weight: 600;
+    }
+
+    &__cell-item {
+        // width: 30px;
+        // height: 30px;
+        padding: 10px;
+        border: 1px solid black;
+
+        &:hover {
+            border: 1px solid aqua
+        }
+    }
+}
